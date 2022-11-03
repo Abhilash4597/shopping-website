@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 0 2px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -13,26 +13,25 @@ html {
     --pink_color: salmon;
     --border_color: rgb(219, 219, 219);
     --text_color: rgb(110, 110, 110);
+    --rating_color: orange;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .flex {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-/*  primary heading start  */
+/*************************  primary heading start  ********************/
 
 .heading_main_div {
     border-bottom: 0.05rem solid var(--border_color);
     padding: 1rem;
-}
-
-.primary_heading_content {
-    justify-content: space-between;
-    max-width: 1080px;
-    margin: 0 auto;
-    flex-wrap: wrap;
 }
 
 .primary_heading_social_media_icon i {
@@ -56,16 +55,9 @@ html {
     border: none;
 }
 
-/*  primary heading end  */
-
-/* main heading start */
-
+/****************** main heading start ********************/
 .main_heading {
-    justify-content: space-between;
-    height: 5%;
-    max-width: 1080px;
-    margin: 0 auto;
-    flex-wrap: wrap;
+    padding: 1.5% 0;
 }
 
 .main_heading-title h1 {
@@ -95,13 +87,12 @@ html {
     font-size: 1.5rem;
 }
 
-.main_heading_right_icons{    
+.main_heading_right_icons {
     width: 10%;
 }
 
 .right_icons {
     font-size: 2.3rem;
-    justify-content: space-between;
 }
 
 .right_icons .heart {
@@ -123,6 +114,7 @@ html {
     left: 1.8rem;
 }
 
+/****************** for responsive bar below the page start *************/
 .bottom-tags {
     display: none;
 }
@@ -140,9 +132,238 @@ html {
 .bar {
     padding: 0 5px;
 }
+/* for responsive bar below the page ends */
 
-/* for tab view */
-@media screen and (max-width:820px) {
+/******************* main content starts **********************/
+
+.intro_heading ul{
+    height: 4rem;
+    justify-content: space-evenly;
+}
+
+.intro_heading li {
+    color: var(--black_color);
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: .7rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.intro_heading li:hover {
+    background-color: var(--pink_color);
+    color: var(--white_color);
+} 
+
+/********************* for banner ***********************/
+
+.banner_and_banner_text {
+    background-image: url(/images/banner-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    margin: 1rem 0;
+}
+
+.banner_and_banner_text .banner_text{
+    padding: 5rem 10rem;
+}
+
+.banner_and_banner_text h2 {
+    color: var(--pink_color);
+    letter-spacing: 0.1rem;
+    margin: 3rem 0;
+    font-size: 3rem;
+}
+
+.banner_and_banner_text h1 {
+    font-size: 4rem;
+}
+
+.banner_and_banner_text h3 {
+    color: rgb(87, 85, 85);
+    letter-spacing: .1rem;
+    margin-top: 200rem 0;
+    font-size: 2rem;
+}
+
+.banner_and_banner_text h3 span {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.banner_and_banner_text button {
+    padding: 1rem 1.2rem;
+    color: var(--white_color);
+    background-color: var(--pink_color);
+    border: none;
+    border-radius: .3rem;
+    margin: 3rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.banner_text button:hover {
+    background-color: rgb(248, 106, 90);
+}
+
+/***************** For horizontal items block *******************/
+.horizontal_items {
+    flex-wrap: wrap;
+}
+
+.horizontal_items_blocks {
+    border: .1rem solid var(--border_color);
+    width: 22%;
+    padding: 1%;
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+
+.block_img_and_text {
+    flex-wrap: wrap;
+}
+
+.horizontal_items_blocks .block_img img {
+    background-color: lightgray;
+    padding: .8rem;
+    border-radius: .5rem;
+    border: .05rem solid gray;
+    width: 2.5rem;
+}
+
+.horizontal_items_blocks .block_text h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: .8rem;
+}
+
+.horizontal_items_blocks .block_text h6 {
+    font-weight: bold;
+    color: var(--pink_color);
+    margin-top: 1rem;
+    margin-left: .8rem;
+    font-size: 1.1rem;
+}
+
+.horizontal_items_blocks .block_number {
+    font-size: 1rem;
+    color: var(--text_color);
+    margin-bottom: 2.4rem;
+}
+
+/*********************** For first asides *********************/
+.sticky {
+    position: sticky;
+    top: 3rem;
+}
+
+.first_aside {
+    border: .1rem solid rgb(192, 192, 192);
+    width: 100%;
+    margin-top: 5rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.first_aside h4 {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
+
+.first_aside .first_aside_lines {
+    /* flex-wrap: wrap; */
+    margin-top: 1.5rem;
+    font-size: 1.7rem;
+    /* border: 1px solid green; */
+}
+
+.first_aside_lines img {
+    width: 2.5rem;
+}
+
+/********************* For second asides *********************/
+.second_aside {
+    width: 100%;
+    /* border: 2px solid black; */
+    margin-top: 4rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.second_aside h4 {
+    font-size: 1.7rem;
+}
+
+.second_aside_contents {
+    /* flex-wrap: wrap; */
+    justify-content: left;
+}
+
+.second_aside_contents .img {
+    margin-top: 2rem;
+}
+
+.second_aside_rating_and_text {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.second_aside_rating_and_text h6 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.second_aside_rating_and_text i {
+    color: orange;
+    font-size: .8rem;
+}
+
+.second_aside_rating_and_text .second_aside_p_span {
+    justify-content: left;
+    /* flex-wrap: wrap; */
+}
+
+.second_aside_rating_and_text .second_aside_p_span p {
+    font-size: 1.2rem;
+    margin-top: .3rem;
+    color: rgb(110, 110, 110);
+    text-decoration: line-through;
+}
+
+.second_aside_rating_and_text .second_aside_p_span span {
+    font-size: 1.2rem;
+    margin-top: .3rem;
+    margin-left: .5rem;
+    font-weight: bold;
+}
+
+.aside_and_main_sections {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    justify-content: space-between;
+    padding-bottom: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************** for tab view ***********************/
+
+@media only screen and (min-width:510px) and (max-width:820px) {
 
     html {
         padding: 2px;
@@ -161,8 +382,83 @@ html {
         width: 60%;
     }
 
-    .bottom-tags{
+    .bottom-tags {
         display: block;
+    }
+
+    .intro_heading {
+        display: none;
+    }
+
+    .horizontal_items_blocks {
+        width: 40%;
+    }
+
+    .horizontal_items {
+        justify-content: space-evenly;
+    }
+
+    aside {
+        display: none;
+    }
+}
+
+/************************ for mobile view ***********************/
+
+@media only screen and (max-width:510px) {
+
+    html {
+        padding: 2px;
+        font-size: 60%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .primary_heading_selectors {
+        display: none;
+    }
+
+    .main_heading {
+        flex-wrap: wrap;
+    }
+
+    .main_heading-title {
+        margin: 0 auto;
+    }
+
+    .main_heading_right_icons {
+        display: none;
+    }
+
+    .main_heading-search {
+        width: 100%;
+    }
+
+    .bottom-tags {
+        display: block;
+    }
+
+    .bottom_bar {
+        width: 100%;
+        left: 0;
+    }
+
+    .intro_heading {
+        display: none;
+    }
+
+    .horizontal_items_blocks {
+        width: 90%;
+    }
+
+    .horizontal_items {
+        justify-content: space-evenly;
+    }
+
+    aside {
+        display: none;
     }
 
 }
