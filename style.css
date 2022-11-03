@@ -159,16 +159,20 @@ html {
 /********************* for banner ***********************/
 
 .banner_and_banner_text {
-    background-image: url(/images/banner-3.jpg);
+    background-image: url(/images/banner-2.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    height: 70vh;
     background-position: center;
     border-radius: 1rem;
-    margin: 1rem 0;
 }
 
 .banner_and_banner_text .banner_text{
-    padding: 5rem 10rem;
+    padding: 4% 0rem;
+    margin: 0% 10%;
+    /* background-color: aqua; */
+    width: 25%;
+    /* padding-top: 100px; */
 }
 
 .banner_and_banner_text h2 {
@@ -222,10 +226,6 @@ html {
     margin-top: 3rem;
 }
 
-.block_img_and_text {
-    flex-wrap: wrap;
-}
-
 .horizontal_items_blocks .block_img img {
     background-color: lightgray;
     padding: .8rem;
@@ -255,47 +255,59 @@ html {
 }
 
 /*********************** For first asides *********************/
+.aside_and_main_sections {
+    /* border: 2px solid blue; */
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
+}
+
 .sticky {
     position: sticky;
-    top: 3rem;
+    top: 10px;
+    /* border: 2px solid black; */
+    margin-top: 5rem;
+    width: 25%;
 }
 
 .first_aside {
     border: .1rem solid rgb(192, 192, 192);
-    width: 100%;
-    margin-top: 5rem;
     border-radius: 1rem;
     padding: 1.5rem;
+    /* width: 30%; */
 }
 
 .first_aside h4 {
     margin-bottom: 2rem;
     margin-top: 1rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .first_aside .first_aside_lines {
     /* flex-wrap: wrap; */
     margin-top: 1.5rem;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     /* border: 1px solid green; */
 }
 
 .first_aside_lines img {
-    width: 2.5rem;
+    width: 3rem;
+}
+
+.first_aside_lines p {
+    margin-left: 1rem;
 }
 
 /********************* For second asides *********************/
 .second_aside {
-    width: 100%;
-    /* border: 2px solid black; */
+    /* width: %; */
+    /* border: 1px solid black; */
     margin-top: 4rem;
     border-radius: 1rem;
     padding: 1.5rem;
 }
 
 .second_aside h4 {
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 
 .second_aside_contents {
@@ -303,53 +315,503 @@ html {
     justify-content: left;
 }
 
-.second_aside_contents .img {
+.second_aside_contents img {
     margin-top: 2rem;
+    width: 5.5rem;
 }
 
 .second_aside_rating_and_text {
     margin-left: 1rem;
-    font-size: 1.5rem;
+    /* font-size: 2rem; */
 }
 
 .second_aside_rating_and_text h6 {
     margin-top: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
 }
 
 .second_aside_rating_and_text i {
     color: orange;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 .second_aside_rating_and_text .second_aside_p_span {
     justify-content: left;
-    /* flex-wrap: wrap; */
 }
 
 .second_aside_rating_and_text .second_aside_p_span p {
-    font-size: 1.2rem;
-    margin-top: .3rem;
+    font-size: 1.6rem;
+    margin-top: .5rem;
     color: rgb(110, 110, 110);
     text-decoration: line-through;
 }
 
 .second_aside_rating_and_text .second_aside_p_span span {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     margin-top: .3rem;
     margin-left: .5rem;
     font-weight: bold;
 }
 
-.aside_and_main_sections {
-    display: flex;
-    flex-wrap: wrap;
-    /* width: 100%; */
-    justify-content: space-between;
-    padding-bottom: 5rem;
+/*************** all articles of main **************/
+
+.main_content {
+    width:75%;
 }
 
+.main_content .new_trend_top {
+    /* flex-wrap: wrap; */
+    /* border: 1px solid goldenrod; */
+    margin-top: 4rem;
+}
 
+.new_trend_top_row h4 {
+    font-size: 2rem;
+    border-bottom: .1rem solid var(--border_color);
+    padding: .5rem;
+}
+
+.new_trend_top_row_contents {
+    border: .1rem solid var(--border_color);
+    border-radius: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.new_trend_top_row_contents img {
+    margin-top: 1rem;
+    width: 10rem;
+    /* border: 1px solid gold; */
+}
+
+.new_trend_top_row_contents .main_img_text h6 {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+
+.new_trend_top_row_contents .main_img_text p {
+    font-size: 1.6rem;
+    margin: .4rem 0;
+    color: var(--text_color)
+}
+
+.new_trend_top_row_contents .main_img_text_p_span {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.main_img_text .main_img_text_p_span p {
+    font-size: 1.6rem;
+    margin-top: .5rem;
+    margin-left: .5rem;
+    font-weight: bold;
+    color: var(--text_color);
+    text-decoration: line-through;
+}
+
+.main_img_text .main_img_text_p_span span {
+    font-size: 1.6rem;
+    margin-top: .5rem;
+    font-weight: bold;
+    color: var(--pink_color);
+}
+
+/*************** Deal of the day ******************/
+
+.deal_of_day h4 {
+    margin-top: 5rem;
+    font-size: 1.7rem;
+    border-bottom: .1rem solid var(--border_color);
+    padding-bottom: .5rem;
+}
+
+.deal_heading_img img{
+    width: 100%;
+    /* border: 1px solid rebeccapurple; */
+}
+
+.deal_img_text {
+    border: .1rem solid var(--border_color);
+    border-radius: 1rem;
+    margin-top: 2rem;
+    padding: .2rem 0rem 3rem .2rem;
+}
+
+.deal_text_button {
+    /* width: 40rem; */
+    /* padding-top: 2rem; */
+}
+
+.deal_text_button i {
+    color: orange;
+    font-size: 1.3rem;
+}
+
+.deal_text_button h5 {
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.deal_text_button p {
+    font-size: 1.4rem;
+    color: var(--text_color);
+    margin-top: .5rem;
+}
+
+.deal_p_span {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.deal_p_span span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--pink_color);
+    margin-top: .5rem;
+}
+
+.deal_p_span p {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: line-through;
+    margin-left: 1rem;
+}
+
+.deal_text_button button {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--white_color);
+    background-color: var(--pink_color);
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-top: 1.2rem;
+}
+
+.already_sold {
+    margin-top: 1rem;
+}
+
+.already_sold h6 {
+    margin: 0rem .5rem;
+}
+
+.already_sold span {
+    font-weight: bolder;
+}
+
+.graph {
+    padding: .5rem;
+    background-color: lightgrey;
+    border-radius: 2.5rem;
+    margin-top: 1rem;
+}
+
+.graph .sold {
+    padding: .3rem;
+    background-color: var(--pink_color);
+    border-radius: 2.5rem;
+    width: 40%;
+}
+
+.deal_text_button h6 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+.time_left {
+    width: 55%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.time_left p {
+    background-color: var(--border_color);
+    width: 4rem;
+    padding: .7rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+}
+
+.time_left p span {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+/************************** New products ***************************/
+
+.product_list {
+    margin-top: 3rem;
+}
+
+.product_list h4 {
+    font-size: 2rem;
+    border-bottom: .1rem solid rgb(219, 219, 219);
+    padding-bottom: .5rem;
+}
+
+.product_list_main_section {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid maroon; */
+}
+
+.product_rows {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product_item_blocks {
+    border: .1rem solid rgb(219, 219, 219);
+    width: 15%;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.product_item_blocks img {
+    width: 100%;
+    /* border: 1px solid brown; */
+}
+
+.product_item_blocks h6 {
+    color: var(--pink_color);
+    font-size: 1.4rem;
+}
+
+.product_item_blocks p {
+    font-size: small;
+    margin-top: 1rem;
+}
+
+.product_item_blocks i {
+    color: orange;
+    font-size: 1.4rem;
+    margin-top: .5rem;
+}
+
+.product_item_blocks .p_span {
+    flex-wrap: wrap;
+    margin-top: .5rem;
+    justify-content: center;
+
+}
+
+.product_item_blocks .p_span p {
+    font-size: 1.6rem;
+    margin-top: .3rem;
+    color: rgb(110, 110, 110);
+    text-decoration: line-through;
+    margin-left: .5rem;
+}
+
+.product_item_blocks .p_span span {
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin-top: .3rem;
+    font-weight: bold;
+}
+/****************** aside and main contains end *******************/
+
+/************* testimonial and vlog section start ****************/
+
+.upper_footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 3rem;
+    margin-top: 5%;
+}
+
+.testimonial {
+    width: 22.5%;
+}
+
+.testimonial h4 {
+    border-bottom: .1rem solid rgb(219, 219, 219);
+    font-size: 2.2rem;
+}
+
+.testimonial_block {
+    border: .1rem solid rgb(219, 219, 219);
+    border-radius: 1rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.testimonial_block img {
+    clip-path: circle();
+    width: 45%;
+}
+
+.testimonial_block h4 {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-top: 10%;
+}
+
+.testimonial_block h5 {
+    font-size: 1.6rem;
+    margin-top: 4%;
+    color: var(--text_color);
+}
+
+.testimonial_block i {
+    font-size: 5rem;
+    margin-top: 4%;
+    color: var(--pink_color);
+}
+
+.testimonial_block p {
+    text-align: center;
+    font-size: 1.7rem;
+    margin-top: 4%;
+    color: var(--text_color);
+}
+
+.middle_img_content {
+    position: relative;
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.middle_img_content img {
+    border-radius: 1rem;
+}
+
+.onImg_text {
+    border-radius: .5rem;
+    width: 35%;
+    height: 35%;
+    padding: 5%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 26%;
+    top: 26%;
+}
+
+.onImg_text p {
+    font-size: 1.5rem;
+    color: white;
+    background-color: black;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: bold;
+}
+
+.onImg_text h3 {
+    font-size: 2.5rem;
+    width: 70%;
+    text-align: center;
+    margin-top: .7rem;
+    color: rgba(0, 0, 0, 0.856);
+}
+
+.onImg_text h4 {
+    font-size: 1.5rem;
+    color: var(--text_color);
+    margin-top: .8rem;
+}
+
+.onImg_text h5 {
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-top: .9rem;
+}
+
+.service {
+    width: 22.5%;
+}
+
+.service h4 {
+    border-bottom: .1rem solid rgb(219, 219, 219);
+    /* width: 100%; */
+    font-size: 2rem;
+}
+
+.service_block {
+    border: .1rem solid rgb(219, 219, 219);
+    border-radius: 1rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.service_lines i {
+    font-size: 3rem;
+    color: var(--pink_color);
+    padding-right: 3rem;
+}
+
+.service_lines {
+    width: 100%;
+    padding: .6rem;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.service_lines h6 {
+    color: rgb(110, 110, 110);
+    font-size: 1.4rem;
+}
+
+.service_lines h5 {
+    color: rgba(0, 0, 0, 0.856);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.service_lines .last {
+    margin-left: .5rem;
+}
+
+.vlog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.vlog_block {
+    margin-top: 2rem;
+    width: 23.5%;
+    margin-bottom: 5%;
+}
+
+.vlog_block img {
+    border-radius: 1rem;
+}
+
+.vlog_block h6 {
+    color: var(--pink_color);
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.vlog_block h4 {
+    font-size: 1.4rem;
+    margin-top: .5rem;
+    color: rgba(0, 0, 0, 0.856);
+}
+
+.vlog_block h5 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: rgb(110, 110, 110);
+}
 
 
 
@@ -367,7 +829,7 @@ html {
 
     html {
         padding: 2px;
-        font-size: 65%;
+        font-size: 60%;
     }
 
     nav {
@@ -401,15 +863,31 @@ html {
     aside {
         display: none;
     }
+
+    .main_content {
+        width:100%;
+    }
+
+    .aside_and_main_sections {
+        width: 100%;
+    }
+
+    .main_content .new_trend_top {
+        flex-wrap: wrap;
+    }
+
+    .product_item_blocks {
+        width: 40%;
+    }
 }
 
 /************************ for mobile view ***********************/
 
-@media only screen and (max-width:510px) {
+@media only screen and (max-width:635px) {
 
     html {
         padding: 2px;
-        font-size: 60%;
+        font-size: 65%;
     }
 
     nav {
@@ -459,6 +937,26 @@ html {
 
     aside {
         display: none;
+    }
+
+    .main_content .new_trend_top {
+        flex-wrap: wrap;
+    }
+    
+    .new_trend_top_row {
+        width: 100%;
+    }
+
+    .deal_of_day {
+        width: 100%;
+    }
+
+    .deal_img_text {
+        flex-direction: column;
+    }
+
+    .product_item_blocks {
+        width: 80%;
     }
 
 }
