@@ -118,9 +118,11 @@ html {
 /****************** for responsive bar below the page start *************/
 .bottom-tags {
     display: none;
+
 }
 
 .bottom_bar {
+    z-index: 1;
     position: fixed;
     bottom: 0;
     left: 20%;
@@ -133,11 +135,12 @@ html {
 .bar {
     padding: 0 5px;
 }
+
 /* for responsive bar below the page ends */
 
 /******************* main content starts **********************/
 
-.intro_heading ul{
+.intro_heading ul {
     height: 4rem;
     justify-content: space-evenly;
 }
@@ -155,7 +158,7 @@ html {
 .intro_heading li:hover {
     background-color: var(--pink_color);
     color: var(--white_color);
-} 
+}
 
 /********************* for banner ***********************/
 
@@ -168,12 +171,9 @@ html {
     border-radius: 1rem;
 }
 
-.banner_and_banner_text .banner_text{
+.banner_and_banner_text .banner_text {
     padding: 4% 0rem;
     margin: 0% 10%;
-    /* background-color: aqua; */
-    width: 25%;
-    /* padding-top: 100px; */
 }
 
 .banner_and_banner_text h2 {
@@ -227,6 +227,11 @@ html {
     margin-top: 3rem;
 }
 
+.horizontal_items_blocks:hover {
+    box-shadow: 0px 1px 10px gray;
+    cursor: pointer;
+}
+
 .horizontal_items_blocks .block_img img {
     background-color: lightgray;
     padding: .8rem;
@@ -257,24 +262,24 @@ html {
 
 /*********************** For first asides *********************/
 .aside_and_main_sections {
-    /* border: 2px solid blue; */
     align-items: flex-start;
-    /* flex-wrap: wrap; */
 }
 
 .sticky {
     position: sticky;
     top: 10px;
     margin-top: 5rem;
-    /* border: 2px solid black; */
-    /* width: 25%; */
 }
 
 .first_aside {
     border: .1rem solid rgb(192, 192, 192);
     border-radius: 1rem;
     padding: 1.5rem;
-    /* width: 30%; */
+}
+
+.first_aside:hover {
+    box-shadow: 0px 1px 10px gray;
+    cursor: pointer;
 }
 
 .first_aside h4 {
@@ -284,10 +289,8 @@ html {
 }
 
 .first_aside .first_aside_lines {
-    /* flex-wrap: wrap; */
     margin-top: 1.5rem;
     font-size: 1.9rem;
-    /* border: 1px solid green; */
 }
 
 .first_aside_lines img {
@@ -300,11 +303,14 @@ html {
 
 /********************* For second asides *********************/
 .second_aside {
-    /* width: %; */
-    /* border: 1px solid black; */
     margin-top: 4rem;
     border-radius: 1rem;
     padding: 1.5rem;
+}
+
+.second_aside:hover {
+    box-shadow: 0px 1px 10px gray;
+    cursor: pointer;
 }
 
 .second_aside h4 {
@@ -312,7 +318,6 @@ html {
 }
 
 .second_aside_contents {
-    /* flex-wrap: wrap; */
     justify-content: left;
 }
 
@@ -323,7 +328,6 @@ html {
 
 .second_aside_rating_and_text {
     margin-left: 1rem;
-    /* font-size: 2rem; */
 }
 
 .second_aside_rating_and_text h6 {
@@ -358,12 +362,10 @@ html {
 /*************** all articles of main **************/
 
 .main_content {
-    width:80%;
+    width: 80%;
 }
 
 .main_content .new_trend_top {
-    /* flex-wrap: wrap; */
-    /* border: 1px solid goldenrod; */
     margin-top: 4rem;
 }
 
@@ -378,15 +380,18 @@ html {
     border-radius: 1rem;
     margin-top: 2rem;
     display: flex;
-    /* width: 10%; */
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.new_trend_top_row_contents:hover {
+    box-shadow: 0px 1px 10px gray;
+    cursor: pointer;
 }
 
 .new_trend_top_row_contents img {
     margin-top: 1rem;
     width: 10rem;
-    /* border: 1px solid gold; */
 }
 
 .new_trend_top_row_contents .main_img_text h6 {
@@ -402,7 +407,6 @@ html {
 
 .new_trend_top_row_contents .main_img_text_p_span {
     display: flex;
-    /* flex-wrap: wrap; */
 }
 
 .main_img_text .main_img_text_p_span p {
@@ -430,9 +434,8 @@ html {
     padding-bottom: .5rem;
 }
 
-.deal_heading_img img{
+.deal_heading_img img {
     width: 100%;
-    /* border: 1px solid rebeccapurple; */
 }
 
 .deal_img_text {
@@ -442,10 +445,6 @@ html {
     padding: .2rem 0rem 3rem .2rem;
 }
 
-.deal_text_button {
-    /* width: 40rem; */
-    /* padding-top: 2rem; */
-}
 
 .deal_text_button i {
     color: orange;
@@ -492,6 +491,11 @@ html {
     border-radius: .5rem;
     padding: 1rem;
     margin-top: 1.2rem;
+}
+
+.deal_text_button button:hover {
+    box-shadow: 0px 1px 10px var(--pink_color);
+    cursor: pointer;
 }
 
 .already_sold {
@@ -559,9 +563,7 @@ html {
 
 .product_list_main_section {
     flex-wrap: wrap;
-    /* display: flex; */
     justify-content: space-between;
-    /* border: 1px solid maroon; */
 }
 
 .product_rows {
@@ -578,9 +580,13 @@ html {
     text-align: center;
 }
 
+.product_item_blocks:hover {
+    box-shadow: 0px 1px 10px gray;
+    cursor: pointer;
+}
+
 .product_item_blocks img {
     width: 80%;
-    /* border: 1px solid brown; */
 }
 
 .product_item_blocks h6 {
@@ -620,6 +626,7 @@ html {
     margin-top: .3rem;
     font-weight: bold;
 }
+
 /****************** aside and main contains end *******************/
 
 /************* testimonial and vlog section start ****************/
@@ -678,18 +685,18 @@ html {
     color: var(--text_color);
 }
 
+/********************second banner**************************/
+
 .middle_img_content {
     position: relative;
     width: 50%;
-    /* flex-wrap: wrap;
-    justify-content: center; */
     background-image: url(/images/cta-banner.jpg);
-    /* background-image: url(/images/banner-2.jpg); */
     background-repeat: no-repeat;
-    background-size: 90% 90%;
-    height: 70vh;
+    background-size: 100% 100%;
+    height: 100%;
     background-position: center;
     border-radius: 1rem;
+    padding: 10% 0;
 }
 
 .middle_img_content img {
@@ -698,16 +705,10 @@ html {
 
 .onImg_text {
     border-radius: .5rem;
-    width: 35%;
-    height: 35%;
     padding: 5%;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
+    margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.5);
-    position: absolute;
-    left: 26%;
-    top: 26%;
 }
 
 .onImg_text p {
@@ -739,37 +740,35 @@ html {
     margin-top: .9rem;
 }
 
+/***************** about service ********************/
+
 .service {
     width: 22.5%;
 }
 
 .service h4 {
     border-bottom: .1rem solid rgb(219, 219, 219);
-    /* width: 100%; */
     font-size: 2rem;
 }
 
 .service_block {
     border: .1rem solid rgb(219, 219, 219);
     border-radius: 1rem;
-    flex-direction: column;
-    justify-content: center;
     padding: 2rem;
     margin-top: 2rem;
-    flex-wrap: wrap;
 }
 
 .service_lines i {
     font-size: 2.3rem;
     color: var(--pink_color);
-    padding-right: 2rem;
+    padding-right: 1.5rem;
 }
 
 .service_lines {
-    width: 100%;
+    width: 90%;
     padding: .6rem;
     justify-content: left;
-    flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 .service_lines h6 {
@@ -787,6 +786,7 @@ html {
     margin-left: .5rem;
 }
 
+/********************* vlog ****************************/
 .vlog {
     flex-wrap: wrap;
 }
@@ -857,15 +857,11 @@ footer {
     max-width: 1440px;
     margin: 0 auto;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .footer_column .last {
-    width: 17%;
-}
-
-.column_block {
-    border: 1px solid white;
-    /* width: 23%; */
+    width: 30%;
 }
 
 .column_block h4 {
@@ -893,15 +889,15 @@ footer {
     padding: 2rem 0;
 }
 
+.footer_payment img {
+    font-size: 25%;
+}
+
 .footer_payment p {
     font-size: 1.4rem;
     margin-top: 1.5rem;
     color: rgb(110, 110, 110);
 }
-
-
-
-
 
 
 
@@ -944,12 +940,16 @@ footer {
         justify-content: space-evenly;
     }
 
+    .banner_and_banner_text .banner_text {
+        margin: 0% 5%;
+    }
+
     aside {
         display: none;
     }
 
     .main_content {
-        width:100%;
+        width: 100%;
     }
 
     .aside_and_main_sections {
@@ -964,6 +964,42 @@ footer {
         width: 40%;
     }
 
+    .testimonial {
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    .middle_img_content {
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    .service {
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .service_lines {
+        width: 31%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .service_block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .service_last-second {
+        margin-left: 7rem;
+    }
+
+    .service_last {
+        margin-right: 7rem;
+        width: 40%;
+    }
+
     .vlog {
         justify-content: space-evenly;
     }
@@ -972,12 +1008,19 @@ footer {
         width: 45%;
     }
 
-    .service_block {
-        width: 80%;
-    }
 
     .last_section {
         margin: 0 auto;
+    }
+
+    .last-second {
+        margin-top: 20px;
+        margin-left: 70px;
+    }
+
+    .last {
+        margin-top: 20px;
+        margin-right: 70px;
     }
 
 }
@@ -1014,6 +1057,10 @@ footer {
         width: 100%;
     }
 
+    .bottom-tags {
+        display: block;
+    }
+
     .bottom_bar {
         width: 100%;
         left: 0;
@@ -1031,23 +1078,27 @@ footer {
         justify-content: space-evenly;
     }
 
+    .banner_and_banner_text .banner_text {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
     aside {
         display: none;
     }
-    
+
     .main_content .new_trend_top {
         flex-wrap: wrap;
     }
-    
+
     .new_trend_top {
         width: 100%;
     }
-    
+
     .new_trend_top_row {
-        width: 90%;
-        margin: 10px auto;
+        width: 100%;
+        margin-top: 10px;
     }
-    
+
     .new_trend_top_row_contents {
         width: 90%;
         margin-left: 20px;
@@ -1059,7 +1110,7 @@ footer {
         width: 100%;
         margin: 20px 20px;
     }
-    
+
     .deal_img_text {
         width: 100%;
         flex-direction: column;
@@ -1075,8 +1126,39 @@ footer {
         margin: 20px auto;
     }
 
+    .upper_footer {
+        flex-wrap: wrap;
+    }
+
+    .testimonial {
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    .middle_img_content {
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    .service {
+        width: 80%;
+        margin: 30px auto;
+    }
+
     .vlog_block {
         width: 90%;
     }
 
+    .column_block {
+        width: 90%;
+    }
+
+    .footer_payment img {
+        width: 100%;
+    }
+
+    .footer_payment p {
+        font-size: 2rem;
+        width: 100%;
+    }
 }
